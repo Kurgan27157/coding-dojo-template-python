@@ -54,7 +54,7 @@ class Basket:
         price = 0.0
         included = list()
         for book in self.books:
-            if self.isBookUnique(book) and book not in included:
+            if book not in included:
                 price += book.price * factor
                 included.append(book)
             else:
